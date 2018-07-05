@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "vue-frontend-template",
+  "version": "0.1.0",
+  "scripts": {
+    "build:prod": "npx vue-cli-service build --mode production",
+    "build:stg": "npx vue-cli-service build --mode staging",
+    "format": "npx prettier --write './src/**/*.js' && npx prettier --write './tests/**/*.js' && npx prettier --write './src/**/*.vue' --parser vue",
+    "format:package.json": "npx prettier-package-json --write package.json",
+    "serve": "npx vue-cli-service serve --mode development",
+    "test:e2e": "npx vue-cli-service test:e2e",
+    "test:unit": "npx vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "url-search-params-polyfill": "^4.0.0",
+    "vue": "^2.5.16",
+    "vue-analytics": "^5.12.2",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "warn": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/plugin-proposal-pipeline-operator": "7.0.0-beta.47",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-plugin-unit-jest": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-prettier": "^3.0.0-rc.3",
+    "@vue/test-utils": "^1.0.0-beta.16",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "prettier-package-json": "^1.6.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
